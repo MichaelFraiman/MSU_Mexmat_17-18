@@ -1,0 +1,22 @@
+\NewDocumentCommand{\TITLE}{+m m m m}{%
+	\thispagestyle{empty}
+	\vspace*{3\baselineskip}{%
+		\sffamily\huge%
+		\begin{flushleft}
+			Конспект лекций по курсу
+		\end{flushleft}
+		\begin{center}
+			\blackseries<<#1>>
+		\end{center}
+	}%
+	\vspace{\baselineskip}%
+	\begin{center}
+		\includegraphics[height=6cm]{#4}
+	\end{center}
+	\vspace{\fill}%
+	\begin{flushleft}\sffamily
+		\textbf{Время прочтения:} #2,\\[2pt]
+		\textbf{Лектор: } #3.
+	\end{flushleft}
+	\vspace*{3\baselineskip}
+}	

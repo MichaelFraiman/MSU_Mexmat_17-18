@@ -1,0 +1,411 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%HYPHENATION%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\providehyphenmins{russian}{{3}{3}}
+
+\hbadness=10000
+\interfootnotelinepenalty=10000
+\doublehyphendemerits=9999
+\pretolerance=100
+\tolerance=1500
+\emergencystretch=\maxdimen
+\hyphenpenalty=6000
+\brokenpenalty9000\relax
+\clubpenalty=9996
+\widowpenalty=9999
+
+\setcounter{tocdepth}{5}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%FONTS%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\defaultfontfeatures{Ligatures=TeX}
+\setmainlanguage[babelshorthands=true]{russian}
+\setotherlanguage{english}
+
+\setmainfont{Constantia}
+
+\setsansfont{Futura PT}[
+	Path=C:/Windows/Fonts/,
+	Extension		=	.otf,
+	UprightFont		=	*Medium,
+	ItalicFont		=	*MediumOblique,
+	FontFace		=	{light}{n}{*Light},
+	FontFace		=	{light}{it}{*LightOblique},
+	FontFace		=	{light}{sl}{*LightOblique},		
+	FontFace		=	{semibold}{n}{*Demi},
+	FontFace		=	{semibold}{it}{*DemiOblique},
+	BoldFont		=	*Heavy,
+	BoldItalicFont	=	*HeavyOblique,
+	FontFace		=	{extrabold}{n}{*Bold_0},
+	FontFace		=	{extrabold}{it}{*BoldOblique},
+	FontFace		=	{black}{n}{*ExtraBold},
+	FontFace		=	{black}{it}{*ExtraBoldOblique},
+]
+
+\newfontfamily\cyrillicfont{Constantia}
+
+\newfontfamily\cyrillicfontsf{Futura PT}[
+	Path=C:/Windows/Fonts/,
+	Extension		=	.otf,
+	UprightFont		=	*Medium,
+	ItalicFont		=	*MediumOblique,
+	FontFace		=	{light}{n}{*Light},
+	FontFace		=	{light}{it}{*LightOblique},
+	FontFace		=	{light}{sl}{*LightOblique},		
+	FontFace		=	{semibold}{n}{*Demi},
+	FontFace		=	{semibold}{it}{*DemiOblique},
+	BoldFont		=	*Heavy,
+	BoldItalicFont	=	*HeavyOblique,
+	FontFace		=	{extrabold}{n}{*Bold_0},
+	FontFace		=	{extrabold}{it}{*BoldOblique},
+	FontFace		=	{black}{n}{*ExtraBold},
+	FontFace		=	{black}{it}{*ExtraBoldOblique},
+]
+
+\newfontfamily\cyrillicfonttt{Consolas}
+
+\setmathfont[%
+	version=scholamath,%
+	math-style=ISO%
+]{TeX Gyre Schola Math}
+
+
+\makeatletter
+
+\DeclareRobustCommand\blackseries
+{\not@math@alphabet\blackseries\mathbf
+	\fontseries{black}\selectfont
+}
+
+\DeclareRobustCommand\extraboldseries
+{\not@math@alphabet\extraboldseries\mathbf
+	\fontseries{extrabold}\selectfont
+}
+
+\DeclareRobustCommand\semiboldseries
+{\not@math@alphabet\semiboldseries\mathbf
+	\fontseries{semibold}\selectfont
+}
+
+\DeclareRobustCommand\mediumseries
+{\not@math@alphabet\mediumseries\mathbf
+	\fontseries{medium}\selectfont
+}
+
+\DeclareRobustCommand\lightseries
+{\not@math@alphabet\lightseries\mathbf
+	\fontseries{light}\selectfont
+}
+
+\DeclareRobustCommand\extralightseries
+{\not@math@alphabet\extralightseries\mathbf
+	\fontseries{extralight}\selectfont
+}
+
+\DeclareRobustCommand\thinseries
+{\not@math@alphabet\thinseries\mathbf
+	\fontseries{thin}\selectfont
+}
+\makeatother 
+
+\DeclareTextFontCommand{\textblack}{\blackseries}
+\DeclareTextFontCommand{\textexbf}{\extraboldseries} 
+\DeclareTextFontCommand{\textsmbf}{\semiboldseries} 
+\DeclareTextFontCommand{\textmed}{\mediumseries} 
+\DeclareTextFontCommand{\textlg}{\lightseries} 
+\DeclareTextFontCommand{\textexlg}{\extralightseries} 
+\DeclareTextFontCommand{\textth}{\thinseries}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%MICROTYPOGRAPHY%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\SetProtrusion[%
+	name		=	*%
+]{%
+	encoding	= 	{*},
+	family		=	{*}
+}{%
+	\textendash			=	{0,250},% "---
+	\textemdash			=	{0,250},
+	-					=	{0,500},
+	\textquoteleft		=	{1000,1000},% `
+	\textquotedblleft	=	{1000,1000},% ``
+	\glqq				=	{1000,0},%,, Opening 99 (down)
+	\grqq				=	{0,1000},%`` closing 66 (up)
+	{,}					=	{0,1000},
+	{.}					=	{0,1000},
+	{:}					=	{0,1000},
+	{;}					=	{0,1000},
+	{?}					=	{0,100},
+	{)}					=	{0,100},
+	{(}					= 	{150,0},
+	\guillemotleft 		=	{200,0},%<<
+	\guillemotright 	=	{0,200},%>>
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%LAYOUT%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\geometry{%
+	%showframe,
+	paperwidth		=	8.27in,
+	paperheight		=	11.7in,
+	bottom			=	2.6in,
+	top				=	1.3in,
+	inner			=	1.3in, 
+	outer			=	2.6in,
+	voffset			=	0in,
+	marginparwidth	=	2in,
+	marginparsep	=	0.3in,
+	footskip		=	1in,
+	headsep			=	0.3in,
+	headheight		=	0.5in,
+}
+
+\renewcommand{\chaptertitlename}{Лекция}
+
+\titleformat{\chapter}[display]
+{\huge\sffamily\blackseries\raggedright}{\chaptertitlename\ \thechapter}{2ex}{\Huge}
+
+\titleformat{\section}
+{\Large\sffamily\blackseries\raggedright}{\thesection}{1em}{}
+
+\titleformat{\section}
+{\Large\sffamily\blackseries\raggedright}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+{\large\sffamily\extraboldseries\raggedright}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+{\normalsize\sffamily\bfseries\raggedright}{\thesubsubsection}{1em}{}
+
+\titleformat{\paragraph}[hang]
+{\normalsize\sffamily\bfseries\bfseries\raggedright}{\theparagraph}{1em}{}
+
+\titleformat{\subparagraph}[hang]
+{\normalsize\sffamily\mdseries\raggedright}{\thesubparagraph}{1em}{}
+
+\titlespacing*{\chapter} {0pt}{50pt}{40pt}
+\titlespacing*{\section} {0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+\titlespacing*{\subsection} {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\titlespacing*{\subsubsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+\titlespacing*{\paragraph}{0pt}{3.25ex plus 1ex minus .2ex}{0.5em}
+\titlespacing*{\subparagraph}{0pt}{3.25ex plus 1ex minus .2ex}{0.25em}
+
+\fancyhf{}
+
+\fancyhead[RO]{\nouppercase{\scshape\liningnums{\leftmark}}}
+
+\fancyhead[LO]{\nouppercase{\scshape\liningnums{\rightmark}}}
+
+\fancyhead[RE]{}
+
+\fancyhead[LE]{}
+
+\fancyhead[CE]{}
+
+\fancyhead[CO]{}
+
+\fancyfoot[C]{\textup{\thepage}}
+
+\fancyfoot[RO,LE]{}
+
+\renewcommand\footrule{}
+
+\renewcommand\headrule{%
+	\begin{minipage}{1\textwidth}
+		\hrule width \hsize height 2pt 
+		\hrule width \hsize \kern 1mm
+	\end{minipage}
+}%
+
+\fancypagestyle{plain}{%
+	\fancyhf{}%
+	\fancyhead[RO,RE,LE,LO,CO,CE]{}
+	\fancyfoot[RO,LE,RE,LO]{}
+	
+	\fancyfoot[C]{\textup{\liningnums{\scshape\thepage}}}%\ из \pageref{LastPage}}}}
+	
+	
+	\renewcommand\footrule{}%
+	
+	\renewcommand\headrule{}%
+	
+}
+
+\pagestyle{fancy}
+
+\renewcommand{\thefootnote}{\textfrak{\alphalph{\value{footnote}}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%THEOREMS%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\renewcommand\qedsymbol{\bfseries\scshape QED}
+
+\declaretheoremstyle[
+	spaceabove=6pt,
+	spacebelow=6pt,
+	headindent=0pt,
+	headfont=\normalfont\bfseries\scshape\upshape,
+	notefont=\mdseries\scshape,
+	notebraces={\unskip\kern.4em(}{)},
+	headpunct=.,
+	bodyfont=\normalfont\itshape,
+	postheadspace=.4em,
+]{THEOREMstyle}
+
+\declaretheoremstyle[
+	spaceabove=6pt,
+	spacebelow=6pt,
+	headindent=0pt,
+	headfont=\normalfont\bfseries\scshape,
+	notefont=\mdseries\scshape,
+	notebraces={\unskip\kern.4em(}{)},
+	headpunct=.,
+	bodyfont=\normalfont\mdseries,
+	postheadspace=.4em,
+]{DEFINITIONstyle}
+
+
+\declaretheoremstyle[
+	spaceabove=4pt,
+	spacebelow=10pt,
+	headindent=0pt,
+	headfont=\normalfont\bfseries\itshape,
+	notefont=\mdseries\scshape,
+	notebraces={\unskip\kern.4em(}{)},
+	headpunct=.,
+	bodyfont=\normalfont\mdseries,
+	postheadspace=.4em,
+	qed=\qedsymbol,
+]{PROOFstyle}
+
+\declaretheorem[%
+	style=THEOREMstyle,%
+	parent=chapter,%
+	name=Теорема%
+]{Theorem}
+
+\declaretheorem[%
+	style=THEOREMstyle,%
+	sibling=Theorem,%
+	name=Лемма%
+]{Lemma}
+
+\declaretheorem[%
+	style=THEOREMstyle,%
+	name=Аксиома%
+]{Axiom}
+
+\declaretheorem[%
+	style=THEOREMstyle,%
+	sibling=Theorem,%
+	name=Утверждение%
+]{Statement}
+
+\declaretheorem[%
+	style=THEOREMstyle,%
+	sibling=Theorem,%
+	name=Предложение%
+]{Proposition}
+
+\declaretheorem[%
+	style=THEOREMstyle,%
+	parent=Theorem,%
+	name=Следствие%
+]{Corollary}
+
+\declaretheorem[%
+	style=DEFINITIONstyle,%
+	parent=chapter,%
+	name=Определение%
+]{Definition}
+
+\declaretheorem[%
+	style=DEFINITIONstyle,%
+	numbered=no,%
+	name=Замечание%
+]{Remark}
+
+\declaretheorem[%
+	style=DEFINITIONstyle,%
+	parent=chapter,%
+	name=Упражнение%
+]{Exercise}
+
+\declaretheorem[%
+	style=DEFINITIONstyle,%
+	parent=chapter,%
+	name=Задача%
+]{Problem}
+
+\declaretheorem[%
+	style=DEFINITIONstyle,%
+	parent=chapter,%
+	name=Пример%
+]{Example}
+
+\declaretheorem[%
+	style=PROOFstyle,%
+	numbered=no,%
+	name=Доказательство%
+]{Proof}
+
+\newcommand{\BTH}{\begin{Theorem}}
+	\newcommand{\ETH}{\end{Theorem}}
+
+\newcommand{\BAX}{\begin{Axiom}}
+	\newcommand{\EAX}{\end{Axiom}}
+
+\newcommand{\BLM}{\begin{Lemma}}
+	\newcommand{\ELM}{\end{Lemma}}
+
+\newcommand{\BPR}{\begin{Proposition}}
+	\newcommand{\EPR}{\end{Proposition}}
+
+\newcommand{\BST}{\begin{Statement}}
+	\newcommand{\EST}{\end{Statement}}
+
+\newcommand{\BCR}{\begin{Corollary}}
+	\newcommand{\ECR}{\end{Corollary}}
+
+\newcommand{\BDF}{\begin{Definition}}
+	\newcommand{\EDF}{\end{Definition}}
+
+\newcommand{\BEX}{\begin{Example}}
+	\newcommand{\EEX}{\end{Example}}
+
+\newcommand{\BPROB}{\begin{Problem}}
+	\newcommand{\EPROB}{\end{Problem}}
+
+\newcommand{\BRM}{\begin{Remark}}
+	\newcommand{\ERM}{\end{Remark}}
+
+\newcommand{\BPRF}{\begin{Proof}}
+	\newcommand{\EPRF}{\end{Proof}}
+
+
+
+
+
+
+
+
